@@ -19,7 +19,8 @@ fluidPage(
   # Show a slider input for bin size
   sidebarLayout(
     sidebarPanel(
-      sliderInput("bins", "Select bin size:", min = 1, max = 50, value = 10)
+      sliderInput("bins", "Select bin size:", min = 1, max = 50, value = 10),
+      HTML("<br>Slide the slider to update the bin size")
     ),
     
     # Show the histogram in the main panel
